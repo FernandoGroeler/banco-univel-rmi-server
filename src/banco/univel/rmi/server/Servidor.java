@@ -96,6 +96,7 @@ public class Servidor implements IRemoteBancoUnivel {
 		
 		if (miliseg > 20000) {
 			usuario.setSaldo(saldoAtual -= valor);	
+			usuario.setDataSaque(fim);
 		} else {
 			System.out.println("Saque só pode ser realizado após 2 minutos");
 		}
